@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Test Portal - Version 3</title>
+    <title>Compiler Construction - Team Afro</title>
 	
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -41,25 +41,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">NRDC</a>
+                <a class="navbar-brand" href="#">CS660</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="nav-choice" id="data">Data</a>
+                        <a class="nav-choice" id="data" value ="1">Symbol Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="projects">Projects</a>
+                        <a class="nav-choice" id="projects" value ="2">Lexxer</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="resources">Resources</a>
+                        <a class="nav-choice" id="resources" value ="3">Parser</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="connections">Connections</a>
+                        <a class="nav-choice" id="connections" value ="4">Abstract Syntax Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="contact">Contact</a>
+                        <a class="nav-choice" id="contact" value ="5">Intermediate Code Generator</a>
                     </li>
                 </ul>
             </div>
@@ -68,44 +68,49 @@
         <!-- /.container -->
     </nav>
 	<div class="submenu">
-		<div class="column">
-			<p class="text title">Data</p>
+		<div class="column" value="1">
+			<p class="text title">Symbol Table</p>
 			<p class="text">
-				<a class="link" href="#none" target="_blank">Geospatial Data Search</a><br>
-				<a class="link" href="#none" target="_blank">Webcam Streams</a><br>
-				<a class="link" href="#none" target="_blank">Webcam Image Archive</a><br>
-				<a class="link" href="#none" target="_blank">Current Conditions</a><br>
+				<a class="link" href="#none" target="_blank">Symbol Table File</a><br>
+                <a class="link" href="#none" target="_blank">Driver File</a><br>
+                <a class="link" href="#none" target="_blank">Collective Files</a><br>
 			</p>
 		</div>
-		<div class="column">
-			<p class="text title">Projects</p>
+		<div class="column" value="2">
+			<p class="text title">Lexxer</p>
 			<p class="text">
-				<a class="link" href="#none" target="_blank">Solar Energy-Water-Environment Nexus</a><br>
-				<a class="link" href="#none" target="_blank">NevCAN</a><br>
-				<a class="link" href="#none" target="_blank">Walker Basin Hydroclimate</a><br>
-				<a class="link" href="#none" target="_blank">Hydrologic Impacts of Forest Thinning</a><br>
+				<a class="link" href="#none" target="_blank">Scanner File</a><br>
+                <a class="link" href="#none" target="_blank">Scanner Test Files</a><br>
+                <a class="link" href="#none" target="_blank">Driver File</a><br>
+                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+
 			</p>
 		</div>
-		<div class="column">
-			<p class="text title">Resources</p>
+		<div class="column" value="3">
+			<p class="text title">Parser</p>
 			<p class="text">
-				<a class="link" href="#none" target="_blank">Image Gallery</a><br>
+				<a class="link" href="#none" target="_blank">Parser File</a><br>
+                <a class="link" href="#none" target="_blank">Parser Unit Tests</a><br>
+                <a class="link" href="#none" target="_blank">Driver File</a><br>
+                <a class="link" href="#none" target="_blank">Collective Files</a><br>
 			</p>
 		</div>
-		<div class="column">
-			<p class="text title">Connections</p>
+		<div class="column" value="4">
+			<p class="text title">AST</p>
 			<p class="text">
-				<a class="link" href="#none" target="_blank">CUAHSI</a><br>
-				<a class="link" href="#none" target="_blank">DataONE</a><br>
+                <a class="link" href="#none" target="_blank">AST File</a><br>
+                <a class="link" href="#none" target="_blank">AST Unit Tests</a><br>
+                <a class="link" href="#none" target="_blank">Driver File</a><br>
+                <a class="link" href="#none" target="_blank">Collective Files</a><br>
 			</p>
 		</div>
-		<div class="column">
-			<p class="text title">Contact</p>
+		<div class="column" value="5">
+			<p class="text title">Code Gen</p>
 			<p class="text">
-				<a class="link" href="#none" target="_blank">Contact Us</a><br>
-				<a class="link" href="#none" target="_blank">Suggest a Dataset</a><br>
-				<a class="link" href="#none" target="_blank">Submit Research Results</a><br>
-				<a class="link" href="#none" target="_blank">Contribute Other Material</a><br>
+                <a class="link" href="#none" target="_blank">Code Gen File</a><br>
+                <a class="link" href="#none" target="_blank">Code Gen Unit Tests</a><br>
+                <a class="link" href="#none" target="_blank">Driver File</a><br>
+                <a class="link" href="#none" target="_blank">Collective Files</a><br>
 			</p>
 		</div>
 	</div>
@@ -152,8 +157,8 @@
 
     </header>
 	<div class="name">
-		<p class="main">Nevada Research Data Center<p>
-		<p class="sub">Acquire and Share Research Data and Results<p>
+		<p class="main">CS660 Compiler Construction<p>
+		<p class="sub">Graduate Team: Chase Carthen, Nolan Burfield, Vinh Le<p>
 	</div>
 	<div class="content off"></div>
 	
