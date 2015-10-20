@@ -80,7 +80,6 @@ a.link:hover{
 	height: 17%;
 	position: fixed;
 	z-index:1;
-	transition: all 0.5s ease;
 	top: -20%;
 	left:15%;
 	color: #89cff0;
@@ -88,15 +87,17 @@ a.link:hover{
 
 .column{
 	background-color: rgba(0,46,98,.95);
-	top: -20%;
-	width:20%;
-	height:100%;
-	float:left;
-	border-right: 1px solid #000;
-	display:block;
+	width:15%;
+	border-top: 1px solid #000;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
+	position: fixed;
+	z-index:-1;
+}
+
+.priority{
+	z-index: 6;
 }
 
 .column:hover{
@@ -112,10 +113,7 @@ a.link:hover{
 }
 
 .deploy{
-    transform: translateY(148%);
-    -webkit-transform: translateY(148%);
-    -o-transform: translateY(148%); 
-    -moz-transform: translateY(148%);
+    top:0%;
 }
 
 .content{
@@ -186,4 +184,13 @@ a.link:hover{
 	font-size:225%;
 	font-weight: bold;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.test{
+	background-color: rgba(0,46,98,.8);
+	width: 5%;
+	height: 5%;
+	z-index: 1;
+	border: 1px solid #000;
+	position:fixed;
 }

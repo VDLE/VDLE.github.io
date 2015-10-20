@@ -13,6 +13,7 @@
 	
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -31,90 +32,88 @@
 <body>
 
     <!-- Navigation -->
-    <nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+    <nav id="menu" class="navbar navbar-inverse navbar-fixed-top priority" role="navigation">
+        <div class="container priority">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+            <div class="navbar-header priority">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">CS660</a>
+                <a class="navbar-brand priority" href="#">CS660</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse priority" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a class="nav-choice" id="data" value ="1">Symbol Table</a>
+                        <a class="nav-choice" id="1">Symbol Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="projects" value ="2">Lexxer</a>
+                        <a class="nav-choice" id="2">Lexxer</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="resources" value ="3">Parser</a>
+                        <a class="nav-choice" id="3">Parser</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="connections" value ="4">Abstract Syntax Table</a>
+                        <a class="nav-choice" id="4">Abstract Syntax Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="contact" value ="5">Intermediate Code Generator</a>
+                        <a class="nav-choice" id="5">Intermediate Code Generator</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-    </nav>
-	<div class="submenu">
-		<div class="column" value="1">
-			<p class="text title">Symbol Table</p>
-			<p class="text">
-				<a class="link" href="#none" target="_blank">Symbol Table File</a><br>
+
+        <div class="column 1">
+            <p class="text title">Symbol Table</p>
+            <p class="text">
+                <a class="link" href="#none" target="_blank">Symbol Table File</a><br>
                 <a class="link" href="#none" target="_blank">Driver File</a><br>
                 <a class="link" href="#none" target="_blank">Collective Files</a><br>
-			</p>
-		</div>
-		<div class="column" value="2">
-			<p class="text title">Lexxer</p>
-			<p class="text">
-				<a class="link" href="#none" target="_blank">Scanner File</a><br>
+            </p>
+        </div>
+        <div class="column 2" value="2">
+            <p class="text title">Lexxer</p>
+            <p class="text">
+                <a class="link" href="#none" target="_blank">Scanner File</a><br>
                 <a class="link" href="#none" target="_blank">Scanner Test Files</a><br>
                 <a class="link" href="#none" target="_blank">Driver File</a><br>
                 <a class="link" href="#none" target="_blank">Collective Files</a><br>
 
-			</p>
-		</div>
-		<div class="column" value="3">
-			<p class="text title">Parser</p>
-			<p class="text">
-				<a class="link" href="#none" target="_blank">Parser File</a><br>
+            </p>
+        </div>
+        <div class="column 3" value="3">
+            <p class="text title">Parser</p>
+            <p class="text">
+                <a class="link" href="#none" target="_blank">Parser File</a><br>
                 <a class="link" href="#none" target="_blank">Parser Unit Tests</a><br>
                 <a class="link" href="#none" target="_blank">Driver File</a><br>
                 <a class="link" href="#none" target="_blank">Collective Files</a><br>
-			</p>
-		</div>
-		<div class="column" value="4">
-			<p class="text title">AST</p>
-			<p class="text">
+            </p>
+        </div>
+        <div class="column 4" value="4">
+            <p class="text title">AST</p>
+            <p class="text">
                 <a class="link" href="#none" target="_blank">AST File</a><br>
                 <a class="link" href="#none" target="_blank">AST Unit Tests</a><br>
                 <a class="link" href="#none" target="_blank">Driver File</a><br>
                 <a class="link" href="#none" target="_blank">Collective Files</a><br>
-			</p>
-		</div>
-		<div class="column" value="5">
-			<p class="text title">Code Gen</p>
-			<p class="text">
+            </p>
+        </div>
+        <div class="column 5" value="5">
+            <p class="text title">Code Gen</p>
+            <p class="text">
                 <a class="link" href="#none" target="_blank">Code Gen File</a><br>
                 <a class="link" href="#none" target="_blank">Code Gen Unit Tests</a><br>
                 <a class="link" href="#none" target="_blank">Driver File</a><br>
                 <a class="link" href="#none" target="_blank">Collective Files</a><br>
-			</p>
-		</div>
-	</div>
-	
+            </p>
+        </div>
+    </nav>
 	
     <!-- Full Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">

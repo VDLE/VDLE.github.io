@@ -1,13 +1,34 @@
 $(document).ready(function(){
-    $(".nav-choice").click(function(){
-		if($(".submenu").hasClass("deploy")){
-			$(".submenu").removeClass("deploy");
+	var oY = $(".column").offset().top;
+	$(".column").css("top","-50%");
+	$(".column").addClass("run");
+
+    $(".navbar-brand").click(function(){
+    	if($(".column").hasClass("run")){
+			$(".column").animate({'top':oY},"slow");
+			$(".column").removeClass("run");
 		}
 		else{
-			$(".submenu").addClass("deploy");
+			$(".column").animate({'top':'-50%'},"slow");
+			$(".column").addClass("run");
 		}
     });
-	
+
+    var tVal;
+    $(".nav-choice").click(function(){
+    	tVal = $(this).attr('id');
+    	console.log(tVal);
+    	if($("."+ tVal).hasClass("run")){
+    		console.log("Yes");
+			$("."+ tVal).animate({'top':oY},"slow");
+			$("."+ tVal).removeClass("run");
+		}
+		else{
+			$("."+ tVal).animate({'top':'-50%'},"slow");
+			$("."+ tVal).addClass("run");
+		}
+    });
+
 	$(".name").click(function () {
 			//stuff to do on mouse enter
 			if($(".content").hasClass("off")){
@@ -22,4 +43,12 @@ $(document).ready(function(){
 				$(".content").addClass("off");
 			}
 	});
+    var origin = 15;
+    var size;
+	for(var i = 1; i< 6; i++){
+		if($(".column").hasClass(i)){
+			size = origin*i;
+			$("."+i).css("left",size+"%");
+		}
+	}
 });
