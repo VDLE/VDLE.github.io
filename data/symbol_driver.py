@@ -1,6 +1,0 @@
-st = SymbolTable()
-
-
-
-
-st.StackDump()

@@ -56,4 +56,10 @@ $(document).ready(function(){
 	$("div.name").click(function(){
         $("div.tri0").toggleClass("toggle");
     });
+	
+	var link;
+	$(".link").click(function () {
+		link = $(this).attr('id');
+		$("#target").attr("src", ("data/"+link));
+	});
 });
