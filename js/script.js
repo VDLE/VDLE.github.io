@@ -60,6 +60,6 @@ $(document).ready(function(){
 	var link;
 	$(".link").click(function () {
 		link = $(this).attr('id');
-		$("#target").attr("src", ("data/"+link));
+		$("#target").attr("src", ("http://vdle.github.io/data/"+link));
 	});
 });
