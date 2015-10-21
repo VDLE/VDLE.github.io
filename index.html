@@ -26,6 +26,7 @@
 
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
+
 	
 </head>
 
@@ -51,7 +52,7 @@
                         <a class="nav-choice" id="1">Symbol Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="2">Lexxer</a>
+                        <a class="nav-choice" id="2">Scanner</a>
                     </li>
                     <li>
                         <a class="nav-choice" id="3">Parser</a>
@@ -71,46 +72,78 @@
         <div class="column 1">
             <p class="text title">Symbol Table</p>
             <p class="text">
-                <a class="link" href="#none" target="_blank">Symbol Table File</a><br>
-                <a class="link" href="#none" target="_blank">Driver File</a><br>
-                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+                <a class="link" id="symboltable.py" href="" data-toggle="modal" data-target="#myModal">Symbol Table File 
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" id="symbol_driver.py"  href="" data-toggle="modal" data-target="#myModal">Driver File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/symboltable.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
             </p>
         </div>
         <div class="column 2" value="2">
-            <p class="text title">Lexxer</p>
+            <p class="text title">Scanner</p>
             <p class="text">
-                <a class="link" href="#none" target="_blank">Scanner File</a><br>
-                <a class="link" href="#none" target="_blank">Scanner Test Files</a><br>
-                <a class="link" href="#none" target="_blank">Driver File</a><br>
-                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+                <a class="link" id="cscanner.py" href="" data-toggle="modal" data-target="#myModal">Scanner File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/demo1.zip">Scanner Test Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+                <a class="link" href="data/scanner.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
 
             </p>
         </div>
         <div class="column 3" value="3">
             <p class="text title">Parser</p>
             <p class="text">
-                <a class="link" href="#none" target="_blank">Parser File</a><br>
-                <a class="link" href="#none" target="_blank">Parser Unit Tests</a><br>
-                <a class="link" href="#none" target="_blank">Driver File</a><br>
-                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+                <a class="link" id="cparser.py"  href="" data-toggle="modal" data-target="#myModal">Parser File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/demo1.zip">Parser Unit Tests					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+                <a class="link" href="data/parser.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
             </p>
         </div>
         <div class="column 4" value="4">
             <p class="text title">AST</p>
             <p class="text">
-                <a class="link" href="#none" target="_blank">AST File</a><br>
-                <a class="link" href="#none" target="_blank">AST Unit Tests</a><br>
-                <a class="link" href="#none" target="_blank">Driver File</a><br>
-                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+                <a class="link" href="#none">AST File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">AST Unit Tests					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Driver File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Collective Files					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
             </p>
         </div>
         <div class="column 5" value="5">
             <p class="text title">Code Gen</p>
             <p class="text">
-                <a class="link" href="#none" target="_blank">Code Gen File</a><br>
-                <a class="link" href="#none" target="_blank">Code Gen Unit Tests</a><br>
-                <a class="link" href="#none" target="_blank">Driver File</a><br>
-                <a class="link" href="#none" target="_blank">Collective Files</a><br>
+                <a class="link" href="#none">Code Gen File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Code Gen Unit Tests					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Driver File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Collective Files					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
             </p>
         </div>
     </nav>
@@ -153,12 +186,14 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a> 
-
     </header>
+	
 	<div class="name">
 		<p class="main">CS660 Compiler Construction<p>
 		<p class="sub">Graduate Team: Chase Carthen, Nolan Burfield, Vinh Le<p>
+		<div class="tri0"></div>
 	</div>
+	
 	<div class="content off">
 		<p class="main">Overview<p>
 		<p class="sub">Language Features: <p>
@@ -181,8 +216,8 @@
 			Parser - Could use more work, obviously. Still a work in progress.<br>
 		<p>
 		<p class="sub">Assumptions Made: <p>
-		<p class="bold">Currently Operational: <p>
-		<p class="regular"><br><br><p>
+		<p class="bold">Please don't be smartass: <p>
+		<p class="regular">You are not inputing headerfiles.<br>You are not inputing obscure unsigned or long types.<br>You are not Terrence.<p>
 		<p class="sub">Restrictions: <p>
 		<p class="bold">Current Notes: <p>
 		<p class="regular">The project itself only fails on grammar errors.<br>This is because we desire to see entire compile run through for testing purposes.<p>
@@ -190,6 +225,7 @@
 		<p class="main">Directions<p>
 		<p class="sub">Dependencies: <p>
 		<p class="regular">
+			Python - This project was developed in the Python programming language. <br>
 			PiP - We used pip in order to install these python modules. <br>
 			PLY - We used this python equivalent of Flex and Yacc in order to deal with the input character stream.<br>
 			BinTrees - We used BinTrees in order to insert balanced Binary Trees within into the symbol table. <br>
@@ -205,12 +241,33 @@
 		<p>	
 		<p class="sub">How to Run: <p>
 		<p class="regular">
+			Click on any of the projects to see a preview of the code or download the entirety at the end<br>
+			of the section. <br>
 			To run this project, merely run the script from command line.<br>
 			<code>./run_project</code> <br>
 			To run the driver for the symbol table, please use this command. <br>
 			<code>python symboltable_driver.py</code>
-			
-		<p>			
+		<p>
+		<p class="main">Files<p>	
+		<p class="sub">Descriptions: <p>	
+		<p class="regular">
+			The Symbol Table was made with the help of the bintree module and utilizes a red-black tree.<br>
+			The Scanner was developed with the PLY python module as an alternative to Flex.<br>
+			The Parser was developed with the PLY python module as an alternative to Bison. There were many <br>
+			errors that still need to be addressed in the Parser.
+		<p>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Trigger Modal in iFrame</button>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog custom">
+		<div class="modal-content customH">
+		  <div class="modal-body">
+			  <iframe id="target" src="http://wikipedia.org" width="100%" height="850px" frameborder="0" allowtransparency="true"></iframe>  
+		  </div>
+		</div>
+	  </div>
 	</div>
 	
     <!-- Script to Activate the Carousel -->

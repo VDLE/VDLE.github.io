@@ -125,7 +125,7 @@ a.link:hover{
 	border: 1px solid #000;
 	transition: all 0.5s ease;
 	bottom: -100%;
-	left:15%;
+	left:14.5%;
 	color: #89cff0;
 	margin: 2%;
 	overflow-y: auto;
@@ -149,54 +149,124 @@ a.link:hover{
 
 
 .name{
+	padding:0%;
 	width: 70%;
-	height: 14%;
+	height: 15%;
 	background-color: rgba(0,46,98,.8);
 	position: fixed;
 	z-index:1;
 	border: 1px solid #000;
 	transition: all 0.5s ease;
 	top: 75%;
-	left:15%;
+	left:14.5%;
 	color: #89cff0;
 	margin: 2%;
 	cursor:pointer;
 }
 
-.name:hover .main{
-	color: #fff;
+.name:hover .tri0{
+	border-top: 20px solid #fff;
 }
 
-.name:hover .sub{
-	color: #fff;
-}
-
-.main{
+p.main{
+	position:relative;
 	padding-top: .5%;
 	padding-left: 2%;
 	padding-bottom:0%;
-	font-size:300%;
+	font-size:250%;
 	font-weight: bold;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-.sub{
+p.sub{
+	position:relative;
+	padding-top:0%;
 	padding-left: 2%;
-	font-size:225%;
+	font-size:200%;
 	font-weight: bold;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-.bold{
+p.bold{
 	padding-left: 3%;
-	font-size:160%;
+	font-size:140%;
 	font-weight: bold;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-.regular{
+p.regular{
 	color: #BEBEBE;
 	padding-left: 5%;
 	font-size:150%;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+span.text{
+    background:#F8F8F8;
+    border: 4px solid #FF0000;
+    color: #FF0000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: fixed;
+    text-align: left;
+    text-transform: uppercase;
+    left:3%;
+	top: 90%;
+    display:none;
+    padding:0 20px;
+    z-index: 6;
+	font-size:125%;
+	font-weight: bold;
+}
+
+a:hover span.text{
+    display:block;
+}
+
+.slide0, .slide1 {
+    cursor: pointer;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid black;
+    background-color: #FFFF99;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 1px auto;
+    padding: 10px 15px 10px 10px;
+}
+
+.tri0 {
+	position:relative;
+    width: 0;
+    height: 0;
+	right: 50%;
+	bottom:120%;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-top: 20px solid #89cff0;
+    float: right;
+    -moz-transition: -moz-transform .3s;
+    -webkit-transition: -webkit-transform .3s;
+    -o-transition: -o-transform .3s;
+    transition: transform .3s;
+}
+
+.toggle {
+    -moz-transform: rotate(-180deg);
+     -o-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.custom {
+    width: 80%;
+}
+
+.customH{
+	height: 90%;
 }
