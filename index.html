@@ -159,7 +159,59 @@
 		<p class="main">CS660 Compiler Construction<p>
 		<p class="sub">Graduate Team: Chase Carthen, Nolan Burfield, Vinh Le<p>
 	</div>
-	<div class="content off"></div>
+	<div class="content off">
+		<p class="main">Overview<p>
+		<p class="sub">Language Features: <p>
+		<p class="bold">Currently Operational: <p>		
+		<p class="regular">
+			Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+			Arrays - Fully Functional with symbol table.<br>
+			Pointers - Fully Functional with symbol table.<br>
+			Functions - Fully Functional with symbol table.<br>
+			Constants - Cannot allow assignment of constant values.<br>
+			Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+			Looping - Currently able to handle new scopes.<br>
+			Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+		<p>
+		<p class="sub">Implementations: <p>
+		<p class="bold">Currently Operational: <p>
+		<p class="regular">
+			Symbol Table - Possesses a Function Node, an Array Node, a Variable Node, and Pointer Node. Currently utilizes a Red-Black Tree. <br>
+			Scanner - Capable of handling Lexical Errors. Errors are not terminating the program due to testing purposes. <br>Instead of <code>!!s</code>, it has been opted for <code>@</code>.<br>
+			Parser - Could use more work, obviously. Still a work in progress.<br>
+		<p>
+		<p class="sub">Assumptions Made: <p>
+		<p class="bold">Currently Operational: <p>
+		<p class="regular"><br><br><p>
+		<p class="sub">Restrictions: <p>
+		<p class="bold">Current Notes: <p>
+		<p class="regular">The project itself only fails on grammar errors.<br>This is because we desire to see entire compile run through for testing purposes.<p>
+		
+		<p class="main">Directions<p>
+		<p class="sub">Dependencies: <p>
+		<p class="regular">
+			PiP - We used pip in order to install these python modules. <br>
+			PLY - We used this python equivalent of Flex and Yacc in order to deal with the input character stream.<br>
+			BinTrees - We used BinTrees in order to insert balanced Binary Trees within into the symbol table. <br>
+			<code>sudo apt-get install python-pip</code><br>
+			<code>sudo pip install ply bintrees</code>
+		<p>	
+		<p class="sub">Command Line Arguments: <p>
+		<p class="regular">
+			<code>-p</code> : Scan File <br>
+			<code>-h</code> : Help Message<br>
+			<code>-v</code> : Version Info <br>
+			<code>-t</code> : Token Log Output
+		<p>	
+		<p class="sub">How to Run: <p>
+		<p class="regular">
+			To run this project, merely run the script from command line.<br>
+			<code>./run_project</code> <br>
+			To run the driver for the symbol table, please use this command. <br>
+			<code>python symboltable_driver.py</code>
+			
+		<p>			
+	</div>
 	
     <!-- Script to Activate the Carousel -->
     <script>

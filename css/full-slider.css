@@ -128,6 +128,7 @@ a.link:hover{
 	left:15%;
 	color: #89cff0;
 	margin: 2%;
+	overflow-y: auto;
 }
 .content:hover{
 	bottom:5%;
@@ -186,11 +187,16 @@ a.link:hover{
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
-.test{
-	background-color: rgba(0,46,98,.8);
-	width: 5%;
-	height: 5%;
-	z-index: 1;
-	border: 1px solid #000;
-	position:fixed;
+.bold{
+	padding-left: 3%;
+	font-size:160%;
+	font-weight: bold;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+.regular{
+	color: #BEBEBE;
+	padding-left: 5%;
+	font-size:150%;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
